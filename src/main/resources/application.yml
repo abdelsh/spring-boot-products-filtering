@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=productFiltering;encrypt=true;trustServerCertificate=true;integratedSecurity=true
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    properties:
+      hibernate.dialect: org.hibernate.dialect.SQLServerDialect
+      hibernate.format_sql: true
+    hibernate:
+      ddl-auto: none
+    show-sql: true
